@@ -10,6 +10,8 @@ Working copy of the 2026-09-17 fleet scan. Full notes: [baselines/2026-09-17.md]
 
 Same-day **approved cuts** (after this scan, via SendToAgent) are in [CHANGELOG.md](CHANGELOG.md). This file keeps the scan-time picture so Monday deep dives can see what changed.
 
+**Later (2026-09-18):** Mr. X Scraper now has its own folder — [`../mr-x-scraper/`](../mr-x-scraper/README.md) (Cypherock X cold-wallet dig, Mon–Sat 16:00 IST). Table rows below stay the 2026-09-17 scan (role was still unclear that day).
+
 ## Subscription usage / limits (as of the scan)
 
 Weekly and total Grokbot subscription limits/usage were **unavailable on the box**. Digests could only flag **relative waste** until a Usage & Billing paste existed.
