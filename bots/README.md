@@ -8,11 +8,11 @@ There is no marketing-automation code in this tree. Personas and ops notes only.
 
 ## Why this structure exists
 
-1. **Recreate / restore** Token Warden from `PROFILE.md` + `OPERATIONS.md` (and `profile.json` when present) if the live bot is lost.
+1. **Recreate / restore** a bot from `PROFILE.md` + `OPERATIONS.md` (and `profile.json` when present) if the live bot is lost.
 2. **Onboard the next bot** by copying `_template/` instead of reinventing file names and sections.
 3. **Audit trail** of fleet cuts and dated baselines for Monday deep dives.
 4. **Shared vocabulary** (`volume class`, `silent-delta`, `propose-only`) so marketing bots describe waste the same way.
-5. **Handoff:** someone else can operate Token Warden from these files alone.
+5. **Handoff:** someone else can operate Token Warden or Mr. X Scraper from these files alone.
 6. **Later (optional):** a CI/lint check that every `bots/<slug>/` has the required files. Not implemented in this commit.
 
 ## Documented bots
@@ -20,12 +20,13 @@ There is no marketing-automation code in this tree. Personas and ops notes only.
 | Bot | Folder | Role |
 |-----|--------|------|
 | Token Warden | [token-warden/](token-warden/README.md) | Fleet token accountant |
+| Mr. X Scraper | [mr-x-scraper/](mr-x-scraper/README.md) | Cypherock X cold-wallet dig (brand-visibility comment targets) |
 
 Other fleet members are inventoried in Token Warden’s [FLEET-BASELINE.md](token-warden/FLEET-BASELINE.md) until they get their own folders. Do not create empty stub folders for them.
 
 ## How to add a bot
 
-1. Copy `bots/_template/` → `bots/<slug>/`. Slug is kebab-case of the live bot name (`token-warden`, `aeo-scout`).
+1. Copy `bots/_template/` → `bots/<slug>/`. Slug is kebab-case of the live bot name (`token-warden`, `mr-x-scraper`).
 2. Fill every required file. Do not merge leftover `TODO` placeholders.
 3. Add a row to the table above.
 4. Log the documentation bootstrap in that bot’s `CHANGELOG.md`.
