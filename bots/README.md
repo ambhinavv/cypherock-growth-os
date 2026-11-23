@@ -17,12 +17,23 @@ There is no marketing-automation code in this tree. Personas and ops notes only.
 
 ## Documented bots
 
+Every bot named in the 2026-09-17 fleet scan has a folder. Token Warden and Mr. X Scraper were registered from live material (a profile export, and an operating playbook). The other seven were registered on 2026-11-24 from that scan plus the cuts already written in Token Warden’s changelog. Their `PROFILE.md` files are restore drafts, not live exports. A live re-list of the Grok Bot account was not available for that pass, so bots created, renamed, or deleted after 2026-09-17 are not in this table.
+
 | Bot | Folder | Role |
 |-----|--------|------|
 | Token Warden | [token-warden/](token-warden/README.md) | Fleet token accountant |
 | Mr. X Scraper | [mr-x-scraper/](mr-x-scraper/README.md) | Cypherock X cold-wallet dig (brand-visibility comment targets) |
+| AEO Scout | [aeo-scout/](aeo-scout/README.md) | AI-search visibility; prospect queue for AI Outreach |
+| AI Outreach Manager | [ai-outreach-manager/](ai-outreach-manager/README.md) | Publisher outreach, send only after approval |
+| YT Wallet Scout | [yt-wallet-scout/](yt-wallet-scout/README.md) | Hardware-wallet YouTube intel |
+| YT Outreach Manager | [yt-outreach-manager/](yt-outreach-manager/README.md) | YouTube creator outreach, send only after approval |
+| Ads Scout | [ads-scout/](ads-scout/README.md) | Weekly public ads-library monitor |
+| Ads Guy | [ads-guy/](ads-guy/README.md) | Own-account ads review; changes only after approval |
+| dr eggbot | [dr-eggbot/](dr-eggbot/README.md) | On-demand bot designer; no routines |
 
-Other fleet members are inventoried in Token Warden’s [FLEET-BASELINE.md](token-warden/FLEET-BASELINE.md) until they get their own folders. Do not create empty stub folders for them.
+Do not create a folder for a bot that is only a rumor. Identity (name plus agent uuid, or a live profile export) has to be in hand first. Do not create empty stub folders.
+
+Scan-time volume classes and overlap stay in Token Warden’s [FLEET-BASELINE.md](token-warden/FLEET-BASELINE.md). Those rows are historical. Per-bot folders hold the later cuts.
 
 ## How to add a bot
 
@@ -53,6 +64,8 @@ Recommended extras:
 
 - **Timezone:** IST (`Asia/Calcutta`) unless the bot’s PROFILE says otherwise.
 - **No secrets:** never commit API keys, cookies, session tokens, or third-party credentials.
+- **No personal or account data:** never commit contact lists, message bodies, ad-account ids, spend, campaign structures, or connector tokens. Role, cadence, and anti-jobs belong here. Operating data stays on the bot computer.
+- **No invented identity:** if harness, cron expression, avatar, or profile text was not exported, say so. A restore draft must be labeled as a draft.
 - **No invented usage numbers:** if Usage & Billing / telemetry is missing, say what is missing and what you need.
 - **Volume class is not a token count.** It is qualitative activity (workdir churn + stated cadence).
 - **Propose-only** unless that bot’s OPERATIONS says it may act after an explicit user yes in *its* chat.

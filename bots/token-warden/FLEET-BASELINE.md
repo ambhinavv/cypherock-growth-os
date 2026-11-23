@@ -12,6 +12,16 @@ Same-day **approved cuts** (after this scan, via SendToAgent) are in [CHANGELOG.
 
 **Later (2026-09-18):** Mr. X Scraper now has its own folder — [`../mr-x-scraper/`](../mr-x-scraper/README.md) (Cypherock X cold-wallet dig, Mon–Sat 16:00 IST). Table rows below stay the 2026-09-17 scan (role was still unclear that day).
 
+**Later (2026-11-24):** The other seven scan-time bots now have folders. Table rows below stay the 2026-09-17 scan. Approved cuts live in those folders and in [CHANGELOG.md](CHANGELOG.md), not in this table. A live re-list was not available, and no `profile.json` was exported for them.
+
+- [AEO Scout](../aeo-scout/README.md)
+- [AI Outreach Manager](../ai-outreach-manager/README.md)
+- [YT Wallet Scout](../yt-wallet-scout/README.md)
+- [YT Outreach Manager](../yt-outreach-manager/README.md)
+- [Ads Scout](../ads-scout/README.md)
+- [Ads Guy](../ads-guy/README.md)
+- [dr eggbot](../dr-eggbot/README.md)
+
 ## Subscription usage / limits (as of the scan)
 
 Weekly and total Grokbot subscription limits/usage were **unavailable on the box**. Digests could only flag **relative waste** until a Usage & Billing paste existed.
