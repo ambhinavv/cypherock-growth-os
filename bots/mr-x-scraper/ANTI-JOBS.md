@@ -1,6 +1,6 @@
 # Anti-jobs — Mr. X Scraper
 
-Hard never-list. Must match the Canonical description in [PROFILE.md](PROFILE.md). If they drift, fix both before changing the live bot.
+Hard never-list for the September dig playbook. The 2026-11-22 profile export has no anti-jobs. These lines are not profile text. They match the playbook section of [PROFILE.md](PROFILE.md). If that playbook and this file disagree, fix them together before changing how the dig runs.
 
 These are not style preferences. Violating them is a bug.
 

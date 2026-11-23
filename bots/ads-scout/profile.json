@@ -1,0 +1,10 @@
+{
+  "name": "Ads Scout · Competitive Ads",
+  "description": "Keeps an eye on Google ads library to ensure we know what's going on in the market",
+  "title": "",
+  "avatarShape": "pebble",
+  "avatarColor": "brown",
+  "namedBy": "user",
+  "serverId": "3120543",
+  "harness": "temporal"
+}

@@ -1,43 +1,45 @@
 # YT Wallet Scout
 
-Hardware-wallet YouTube intel. Documented from the 2026-09-17 fleet scan and the cut approved that day. Not a live profile export.
+Hardware-wallet and cold-wallet YouTube intelligence. Daily new-video scans, creator discovery, Cypherock mentions, competitor coverage, and scores meant for outreach.
 
 | | |
 |---|---|
 | **Name** | YT Wallet Scout |
-| **Title** | YT Wallet Scout |
+| **Title** | empty in the 2026-11-22 export |
 | **Slug** | `yt-wallet-scout` |
 | **agent uuid** | `7bc3178d-132d-42d2-acb1-34708f32005b` |
 | **serverId** | `2915316` |
 | **Owner** | Abhinav Singh |
 | **Timezone** | Asia/Calcutta (IST) |
-| **harness** | not captured — no live `profile.json` export |
-| **Job** | Hardware-wallet YouTube intel. Weekday runs are a priority slice and silent-delta. Full cohort is Sunday 8:15 IST. Do not email creators. |
-| **Volume class** | high at the 2026-09-17 scan. Not a token count. |
-| **Change model** | Approved cut 2026-09-17 via Token Warden after an explicit yes. Sunday 8:15 IST is that instruction, not a copied cron. No same-day full rerun after a failed or partial morning. |
+| **harness** | temporal |
+| **Avatar** | empty in the export |
+| **namedBy** | user |
+| **Status** | Operational |
+| **Job** | Daily YouTube scans of the hardware-wallet and cold-wallet space, plus creator discovery, Cypherock mentions, competitor coverage, and outreach-ready scores. |
 
 ## When to use
 
-- Restore the scout if the live bot is lost: [PROFILE.md](PROFILE.md) + [OPERATIONS.md](OPERATIONS.md).
-- Confirm weekdays stay a priority slice and silent-delta before someone puts the full cohort back on every morning.
+- The daily new-video scan the live profile describes.
+- A creator score for YT Outreach Manager. Sending the email is that bot’s job, after approval.
 
 ## When not to use
 
-Do not ask it to email creators. That is YT Outreach. Do not restore the earlier name YT Vigilante. See [ANTI-JOBS.md](ANTI-JOBS.md).
+It does not send creator email. Chief BD’s profile, not this one, says this scout operates under Chief BD, stays on silent-delta when a run is empty, and is throttled per Token Warden before outreach is starved. See [ANTI-JOBS.md](ANTI-JOBS.md).
 
 ## Links
 
-- [PROFILE.md](PROFILE.md) — restore draft, not a live export
-- [OPERATIONS.md](OPERATIONS.md) — weekday slice and Sunday full cohort
+- [PROFILE.md](PROFILE.md) — live description, plus the 2026-09-17 cut labeled as not exported
+- [profile.json](profile.json) — sanitized restore aid, 2026-11-22
+- [OPERATIONS.md](OPERATIONS.md) — daily scans in the export; Sunday cohort not in it
 - [ANTI-JOBS.md](ANTI-JOBS.md) — hard never-list
-- [CHANGELOG.md](CHANGELOG.md) — docs bootstrap and the 2026-09-17 cut
+- [CHANGELOG.md](CHANGELOG.md) — export reconciliation
 
 ## Operator notes
 
-Evidence is the 2026-09-17 fleet scan, plus the cut approved that day via Token Warden after an explicit yes. This pass did not re-read the live Grok Bot on 2026-11-24.
+The live profile says daily new-video scans. It does not mention a weekday priority slice, silent-delta, or a Sunday full cohort.
 
-The earlier name YT Vigilante was renamed before the scan. Do not restore that name.
+The 2026-09-17 cut said weekdays are a priority slice and silent-delta, and the full cohort is Sunday 8:15 IST, with no same-day full rerun after a failed or partial morning. That cut is not in this export. Chief BD’s export does say “silent-delta when empty” for this scout. Both are recorded. This folder does not claim the Sunday cohort is still the live schedule.
 
-The old daily digest hour was inferred near 08:00 IST, with output around 08:15 on 2026-09-17. Do not invent a cron expression. Local mirrors said "No routines yet" while workdirs showed a morning rhythm. Treat the mirror as stale.
+The earlier name YT Vigilante was already renamed before the 2026-09-17 scan. Do not restore it. The export’s name is YT Wallet Scout.
 
-Do not commit creator lists or score files. Voice was not captured. Harness and avatar were not exported.
+Do not commit creator lists or score files. The old morning hour was inferred near 08:00 IST. Do not invent a cron.

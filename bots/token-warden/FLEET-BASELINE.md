@@ -10,9 +10,9 @@ Working copy of the 2026-09-17 fleet scan. Full notes: [baselines/2026-09-17.md]
 
 Same-day **approved cuts** (after this scan, via SendToAgent) are in [CHANGELOG.md](CHANGELOG.md). This file keeps the scan-time picture so Monday deep dives can see what changed.
 
-**Later (2026-09-18):** Mr. X Scraper now has its own folder — [`../mr-x-scraper/`](../mr-x-scraper/README.md) (Cypherock X cold-wallet dig, Mon–Sat 16:00 IST). Table rows below stay the 2026-09-17 scan (role was still unclear that day).
+**Later (2026-09-18):** Mr. X Scraper now has its own folder — [`../mr-x-scraper/`](../mr-x-scraper/README.md). The September playbook is a Cypherock X cold-wallet dig, Mon–Sat 16:00 IST. The 2026-11-22 profile export does not contain that dig. Table rows below stay the 2026-09-17 scan (role was still unclear that day).
 
-**Later (2026-11-24):** The other seven scan-time bots now have folders. Table rows below stay the 2026-09-17 scan. Approved cuts live in those folders and in [CHANGELOG.md](CHANGELOG.md), not in this table. A live re-list was not available, and no `profile.json` was exported for them.
+**Later (2026-11-24):** Every bot in the [roster](../README.md) has a folder, and each one has a `profile.json` from the 2026-11-22 export. Table rows below stay the 2026-09-17 scan. Approved cuts live in those folders and in [CHANGELOG.md](CHANGELOG.md), not in this table. Six bots created after the scan (Chief Business Development Bot, X Zero Signal Outreach, Mr. Executive Assistant, Cypherock Marketing Strategist, Financial Accounting Bot, Bot Doctor) are in the roster and are not rows in this table.
 
 - [AEO Scout](../aeo-scout/README.md)
 - [AI Outreach Manager](../ai-outreach-manager/README.md)

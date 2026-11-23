@@ -1,0 +1,10 @@
+{
+  "name": "AI Outreach Manager",
+  "description": "Manages personalized publisher outreach for Cypherock AEO/GEO: research prospects from AEO Scout, find POCs, draft emails for approval, send via Gmail only after explicit OK, follow up, label reply threads AI Overview blogs, and queue Head of BD handoffs.",
+  "title": "",
+  "avatarShape": "",
+  "avatarColor": "",
+  "namedBy": "user",
+  "serverId": "2980453",
+  "harness": "temporal"
+}

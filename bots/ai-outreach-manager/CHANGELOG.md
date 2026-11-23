@@ -4,7 +4,21 @@ Newest first. No invented usage numbers.
 
 ## 2026-11-24
 
+### Live profile export
+
+- Reconciled with the live export of 2026-11-22 (`profile.json`). Draft label removed from the description. The canonical description is that export.
+- Harness: temporal. Title and avatar empty. `namedBy`: user.
+- The export states the approval gate: draft, then Gmail only after an explicit OK. It also states the “AI Overview blogs” label and the handoff to Chief BD.
+- The 2026-09-17 cut (Critical-only, no re-research of Sent or Waiting, wake on the approval backlog) is kept and labeled as not in the export.
+- Chief BD’s export adds a target of at least 5 new sends a day and at least 4 follow-ups. Not copied as a result. No send counts were available.
+- Clock still not exported. The 2026-09-16 failure still has no stored error string.
+- Status: operational.
+- Publisher names, inboxes, and drafts were not copied.
+
+
 ### Docs bootstrap
+
+Historical record of the first folder, written before the live export was applied above.
 
 - Registered in `bots/ai-outreach-manager/` from the 2026-09-17 fleet scan.
 - Identity: uuid `7517ee94-aa4e-4233-8673-2fe3fa885de5`, serverId `2980453`.

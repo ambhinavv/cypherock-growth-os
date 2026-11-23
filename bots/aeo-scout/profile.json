@@ -1,0 +1,10 @@
+{
+  "name": "AEO Scout",
+  "description": "Monitors Google, Bing, and other AI search engines daily to track Cypherock’s AI visibility, competitor mentions, citation sources, and country-level trends. It identifies influential blogs and websites cited by AI, detects meaningful changes over time, and builds a prioritized prospect database for future handoff to the AI Outreach Manager.",
+  "title": "",
+  "avatarShape": "",
+  "avatarColor": "",
+  "namedBy": "user",
+  "serverId": "2964531",
+  "harness": "temporal"
+}

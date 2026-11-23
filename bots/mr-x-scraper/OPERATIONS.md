@@ -1,6 +1,10 @@
 # Operations — Mr. X Scraper
 
-How Mr. X Scraper actually runs. Recreate routines from this file if the live bot is lost.
+This file is the September 2026 operating playbook for the Cypherock X cold-wallet dig. It is **not** in the 2026-11-22 profile export. The export is a marketing-tools hint. See [PROFILE.md](PROFILE.md) and [profile.json](profile.json).
+
+Recreate the dig from this file only if Abhinav still wants that job. Do not paste this playbook over the exported profile field unless he says to.
+
+Harness in the export: temporal. Avatar: blob / red. Title: empty.
 
 Owner: **Abhinav Singh**. Timezone: **Asia/Kolkata (IST)**. Agent uuid `1a269503-bacb-4ca0-a0f7-742f89be739c`, serverId `2642625`.
 
