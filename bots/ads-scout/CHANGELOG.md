@@ -4,7 +4,19 @@ Newest first. No invented usage numbers.
 
 ## 2026-11-24
 
+### Live profile export
+
+- Reconciled with the live export of 2026-11-22 (`profile.json`). Draft label removed from the description. The canonical description is that one sentence.
+- Live name: Ads Scout · Competitive Ads. Folder stays `ads-scout`.
+- Harness: temporal. Avatar: pebble / brown. Title empty. `namedBy`: user.
+- Status: on hold since 2026-09-22 23:51 IST (operator hold list, serverId `3120543`). Resume when Abhinav says so. The export shows the bot still existed. The hold is not a line in the profile.
+- Kept, and labeled as not in the export: Monday 08:00 IST silent-delta, daily removed 2026-09-16, no copied cron, work path `competitor-ads-intel`.
+- Library captures and competitor names were not copied.
+
+
 ### Docs bootstrap
+
+Historical record of the first folder, written before the live export was applied above.
 
 - Registered in `bots/ads-scout/` from the 2026-09-17 fleet scan.
 - Identity: uuid `70b9e7e7-5a5c-487f-885e-b9ee6a6f633d`, serverId `3120543`.

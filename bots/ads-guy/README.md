@@ -1,47 +1,43 @@
 # Ads Guy
 
-Own-account ads reviewer. Propose only. Documented from the 2026-09-17 fleet scan. Not a live profile export.
+Own-account Google Ads manager. The live name is **Ads Guy · Performance Marketing**. The folder stays `ads-guy`.
 
 | | |
 |---|---|
-| **Name** | Ads Guy |
-| **Title** | Ads Guy |
+| **Live name** | Ads Guy · Performance Marketing |
+| **Title** | empty in the 2026-11-22 export |
 | **Slug** | `ads-guy` |
 | **agent uuid** | `42a6a03e-33a0-4cec-bb33-fd066665d5b7` |
 | **serverId** | `2945579` |
 | **Owner** | Abhinav Singh |
 | **Timezone** | Asia/Calcutta (IST) |
-| **harness** | not captured — no live `profile.json` export |
-| **Job** | Own-account ads review. Propose only. No bid, budget, ad, keyword, or campaign edit without an explicit yes in this chat for that change. |
-| **Volume class** | low at the 2026-09-17 scan because the ads connector was blocked; would be med if auth returned. Not a token count. |
-| **Change model** | Daily review paused 2026-09-17 until the ads connector authenticates. Weekly and monthly were left on. Do not resume daily from this document. |
+| **harness** | temporal |
+| **Avatar** | empty in the export |
+| **namedBy** | user |
+| **Status** | Operational |
+| **Job** | Monitor and analyse the Google Ads account daily at 8:00 AM IST. Plain-text WhatsApp-style updates. Recommend changes that serve profitable growth. Execute only after explicit approval. |
 
 ## When to use
 
-- Restore the reviewer if the live bot is lost: [PROFILE.md](PROFILE.md) + [OPERATIONS.md](OPERATIONS.md).
-- Confirm the daily review is still paused before someone turns it back on. Auth after 2026-11-24 is unknown.
+- The daily 8:00 AM IST account review, as the live profile states it.
+- A recommended change to a bid, budget, ad, keyword, or campaign. Execution waits for an explicit approval.
 
 ## When not to use
 
-Do not ask it to scan public ad libraries. That is Ads Scout. Do not ask it to edit a bid, budget, ad, keyword, or campaign without an explicit yes in this chat for that change. See [ANTI-JOBS.md](ANTI-JOBS.md).
+Public ad-library monitoring is Ads Scout. See [ANTI-JOBS.md](ANTI-JOBS.md).
 
 ## Links
 
-- [PROFILE.md](PROFILE.md) — restore draft, not a live export
-- [OPERATIONS.md](OPERATIONS.md) — daily paused; weekly and monthly clocks not captured
+- [PROFILE.md](PROFILE.md) — live description, plus earlier scan notes labeled as not exported
+- [profile.json](profile.json) — sanitized restore aid, 2026-11-22
+- [OPERATIONS.md](OPERATIONS.md) — daily clock from the export; weekly and monthly clocks were not
 - [ANTI-JOBS.md](ANTI-JOBS.md) — hard never-list
-- [CHANGELOG.md](CHANGELOG.md) — docs bootstrap and the 2026-09-17 pause
+- [CHANGELOG.md](CHANGELOG.md) — export reconciliation and the 2026-09-17 pause note
 
 ## Operator notes
 
-Evidence is the 2026-09-17 fleet scan. This pass did not re-read the live Grok Bot on 2026-11-24.
+The 2026-11-22 profile describes a daily review at 8:00 AM IST and execution only after explicit approval. It optimises for ROAS, CPA, and wasted spend, and it rejects vanity metrics.
 
-The scan called the ads connector Ryze AI and found it unauthenticated. The only report found was a blocked daily note from 2026-09-15. This folder does not quote that note.
+The 2026-09-17 fleet scan recorded that daily review as paused until the ads connector authenticates, and left weekly and monthly on without capturing their clocks. The export does not restate that pause, and it does not mention weekly or monthly. This folder does not claim the pause was lifted, and it does not claim the pause is still in force.
 
-Daily review was inferred around 08:00 IST. That is not an exported cron. Do not invent one. Do not resume daily from this document. Auth after 2026-11-24 is unknown, so daily stays documented as paused.
-
-Weekly and monthly were left on because Abhinav skipped pausing them. Their clocks were not captured. Do not invent them.
-
-Notes lived under `google-ads-intelligence` and `daily-reports`. The routine slug was not exported.
-
-Voice from the scan: short WhatsApp-style updates. WhatsApp-style is a format, not a WhatsApp send. Harness and avatar were not exported. Do not write account ids, spend, or campaign structures into this folder.
+WhatsApp-style is the update format in the profile. It is not a WhatsApp send. No account ids, spend, or campaign structures are stored here.

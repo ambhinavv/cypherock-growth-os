@@ -1,43 +1,43 @@
 # AEO Scout
 
-Morning AI-search visibility. Perplexity-first daily. Documented from the 2026-09-17 fleet scan. Not a live profile export.
+Daily AI-search visibility for Cypherock. Tracks citations and builds a prospect list for AI Outreach Manager.
 
 | | |
 |---|---|
 | **Name** | AEO Scout |
-| **Title** | AEO Scout |
+| **Title** | empty in the 2026-11-22 export |
 | **Slug** | `aeo-scout` |
 | **agent uuid** | `becdbf7e-437b-4bc7-9fdb-7733d8e3ac55` |
 | **serverId** | `2964531` |
 | **Owner** | Abhinav Singh |
 | **Timezone** | Asia/Calcutta (IST) |
-| **harness** | not captured — no live `profile.json` export |
-| **Job** | Morning AI-search visibility. Perplexity-first daily. Google/Bing at most 2-3 times a week, and stop on a challenge page or logged-out session. Silent if no delta. Handoff is a prospect queue for AI Outreach. Do not email anyone. |
-| **Volume class** | high at the 2026-09-17 scan. Not a token count. |
-| **Change model** | Approved cut 2026-09-17 via Token Warden after an explicit yes: Perplexity-first daily; Google/Bing cap; silent if no delta. Daily Google/Bing only if Abhinav says yes in this chat. |
+| **harness** | temporal |
+| **Avatar** | empty in the export |
+| **namedBy** | user |
+| **Status** | Operational |
+| **Job** | Monitor Google, Bing, and other AI search engines daily for Cypherock’s visibility, competitor mentions, citation sources, and country-level trends. Hand a prioritized prospect database to AI Outreach Manager. |
 
 ## When to use
 
-- Restore the scout if the live bot is lost: [PROFILE.md](PROFILE.md) + [OPERATIONS.md](OPERATIONS.md).
-- Confirm Google/Bing are still capped, and that a no-delta morning stays silent, before someone turns a full daily crawl back on.
+- The daily visibility check described in the live profile.
+- A prospect handoff for AI Outreach Manager. Chief Business Development Bot’s profile says this scout operates under Chief BD, and that it should be throttled, per Token Warden, before outreach is starved.
 
 ## When not to use
 
-Do not ask it to email anyone, or to run ads, YouTube, X, or token accounting. See [ANTI-JOBS.md](ANTI-JOBS.md).
+Sending the outreach is AI Outreach Manager, and only after an explicit OK in that bot’s chat. See [ANTI-JOBS.md](ANTI-JOBS.md).
 
 ## Links
 
-- [PROFILE.md](PROFILE.md) — restore draft, not a live export
-- [OPERATIONS.md](OPERATIONS.md) — cadence and handoff
+- [PROFILE.md](PROFILE.md) — live description, plus the 2026-09-17 cut labeled as not exported
+- [profile.json](profile.json) — sanitized restore aid, 2026-11-22
+- [OPERATIONS.md](OPERATIONS.md) — what the export says, and what the scan cut said
 - [ANTI-JOBS.md](ANTI-JOBS.md) — hard never-list
-- [CHANGELOG.md](CHANGELOG.md) — docs bootstrap and the 2026-09-17 cut
+- [CHANGELOG.md](CHANGELOG.md) — export reconciliation
 
 ## Operator notes
 
-Evidence is the 2026-09-17 fleet scan. This pass did not re-read the live Grok Bot on 2026-11-24.
+The live profile says Google, Bing, and other AI search engines, daily. It does not mention Perplexity, a weekly cap, or silent-delta.
 
-The clock was not exported. The scan saw output around 08:10 IST on 2026-09-17. Do not invent a cron string.
+The 2026-09-17 approved cut said the opposite about frequency: Perplexity-first daily, Google and Bing at most two or three times a week, stop on a challenge page or a logged-out session, silent if there is no delta. That cut is not in the export. This folder does not claim it is still applied, and it does not delete the record of the cut.
 
-Harness, avatar, and profile text were not exported. Title in this table is the scan name, not a live title field.
-
-Do not re-research Sent or Waiting. Do not put prospect names in this folder.
+The clock was not exported. The scan saw output around 08:10 IST on 2026-09-17. Do not invent a cron. Do not put prospect names in this folder.

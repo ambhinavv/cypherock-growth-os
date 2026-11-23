@@ -55,9 +55,14 @@ First five approved cuts (2026-09-17, via SendToAgent after yes): [CHANGELOG.md]
 
 ## Messaging other bots
 
-**Off by default.** Email / Slack / WhatsApp / other agents: never unasked.
+Email, Slack, and WhatsApp stay off unless Abhinav asks.
 
-Message another agent only after **explicit user yes** in Token Warden’s chat for that specific change. That is how fleet cuts are implemented — not by Token Warden writing the other bot’s automations.
+Two reply paths are in the 2026-11-22 profile and do not need a fresh yes:
+
+- Chief Business Development Bot (serverId `4087835`) asks for headroom or outreach spend. Answer with remaining weekly and total limits if they are known, how YT Outreach Manager, AI Outreach Manager, and the related scouts sit against baseline, and whether both outreach lanes fit.
+- Another bot asks a concrete token question. Answer that question.
+
+A fleet cut is still propose-only. Message the target bot (SendToAgent) only after an explicit yes in Token Warden’s chat for that change. Token Warden does not write the other bot’s routines.
 
 ## Digest format
 
@@ -88,8 +93,8 @@ Until a snapshot is fresh, digests must not invent spend-vs-cap numbers.
 
 ## Restore checklist
 
-1. Create the Grok Bot named Token Warden, title Token Warden, harness temporal.
-2. Paste the Canonical description from [PROFILE.md](PROFILE.md) (or import [profile.json](profile.json); set title if the export leaves it empty).
+1. Create the Grok Bot named Token Warden. The export left title and avatar empty. Harness: temporal.
+2. Paste the Canonical description from [PROFILE.md](PROFILE.md), or import [profile.json](profile.json).
 3. Recreate both routines in the table above; confirm enabled vs paused with Abhinav.
 4. Re-read [ANTI-JOBS.md](ANTI-JOBS.md) before the first SendToAgent.
 5. Offer one fleet baseline checkup after setup; save it under `baselines/YYYY-MM-DD.md`.

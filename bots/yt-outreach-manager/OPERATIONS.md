@@ -1,51 +1,53 @@
 # Operations — YT Outreach Manager
 
-Owner: **Abhinav Singh**. Timezone: **Asia/Calcutta (IST)**. Agent uuid `53f55bd2-e78b-44ae-bc3a-c6e5167da17d`, serverId `3125498`.
+Owner: **Abhinav Singh**. Timezone: **Asia/Calcutta (IST)**. Agent uuid `53f55bd2-e78b-44ae-bc3a-c6e5167da17d`, serverId `3125498`. Harness: temporal. Live name: YT Outreach Manager · YouTube Outreach.
 
-Evidence: fleet scan 2026-09-17, plus the cut approved that day via Token Warden after an explicit yes. Not re-read on 2026-11-24. No live `profile.json`.
+Evidence: live profile export 2026-11-22 ([profile.json](profile.json)). The 2026-09-17 cut is labeled. It is not in the export.
 
 ## Routines
 
 | Routine | Schedule (IST) | Enabled? | Work folder | Notes |
 |---------|----------------|----------|-------------|-------|
-| primary send batch (slug not exported) | weekdays 1:00 PM (approved instruction, not a copied cron) | not re-read on 2026-11-24 | not exported | at most two send batches a day |
+| Send batch | after approval, at local business hours (the export). Weekdays 1:00 PM IST is the 2026-09-17 primary-batch instruction, not a copied cron, and not in the export | not exported | not exported | at most two batches a day was the cut, not the export |
 
-The second batch has no exported clock. Do not invent one. Do not invent a cron expression for the 1:00 PM primary.
+The second batch has no exported clock. Do not invent one. Do not invent a cron for 1:00 PM.
 
-Extra local-hour send wakes were seen at the scan. The cut removed that pattern. Do not restore them.
+Extra local-hour send wakes were seen at the scan. The cut removed that pattern. The export does not mention it.
 
-## How it scans / acts
+## What the export says
 
-It does not crawl. It reuses YT Wallet Scout scores. It may draft without asking. It sends email only after an explicit yes in this chat for that batch. A draft is not a send. Yes is per batch.
+Enrich Scout or user leads. Find points of contact. Personalize emails. Send only after approval, at local business hours. Manage follow-ups. Keep creator relationship history.
 
-Publishers stay on AI Outreach’s pipeline. Do not merge the lists.
+## What the 2026-09-17 cut said (not in the export)
 
-Do not put creator names, addresses, or message text in this repo. Do not restate send counts. Do not treat any daily numeric target from the scan as a current quota.
+- At most two send batches a day. Primary batch weekdays at 1:00 PM IST.
+- Reuse YT Wallet Scout scores. Do not re-crawl.
+- Draft without a separate ask. Send only after an explicit yes for that batch.
+- Do not restore the extra local-hour send wakes.
 
-Volume class at the scan was high. That is not a token count.
+## Quotas named by Chief BD (not in this export)
+
+At least 20 outreach emails sent per IST business day, still approval-limited. At least 4 follow-ups if there is no reply. Several addresses on one prospect: work them one by one. Not a measured count.
+
+Do not treat a daily number from the scan as a quota. Do not restate send counts. Do not put creator names, addresses, or message text in this repo.
 
 ## Change model
 
-- May: draft from existing scores, and hold at most two send batches a day.
-- Requires an explicit yes in **this** chat for that batch: sending email.
-- Does not add local-hour send wakes back.
-- Does not send Slack or WhatsApp, or message other agents by default.
-- Does not re-crawl, and does not run publisher outreach.
+- May: enrich, find a contact, personalize, and hold a draft.
+- Requires approval before a send, and the send waits for local business hours. The export states both.
+- Does not send Slack or WhatsApp, or message other agents, as part of this job.
+- Does not run publisher outreach.
 
 ## Digest / output format
 
-A draft is not a send. Voice was not captured. Do not invent a catchphrase.
-
-Do not include creator names, addresses, message text, or send counts.
+A draft is not a send. Voice was not captured.
 
 ## Restore checklist
 
-1. Create the Grok Bot named YT Outreach Manager. Title was not in a profile export; this draft uses the scan name.
-2. Compare [PROFILE.md](PROFILE.md) with the live bot before pasting. It is a restore draft, not a live export.
-3. Primary batch: weekdays 1:00 PM IST, as the approved instruction. Do not paste a cron string.
-4. Cap sends at two batches a day. Do not restore extra local-hour send wakes.
-5. Draft without asking. Send only after an explicit yes in this chat for that batch.
-6. Reuse YT Wallet Scout scores. Do not re-crawl. Do not merge AI Outreach’s publisher list.
-7. Do not copy creator names, addresses, or message text. Do not restate send counts, and do not revive a scan-time daily numeric target as a quota.
-8. Confirm [ANTI-JOBS.md](ANTI-JOBS.md).
-9. Log the restore in [CHANGELOG.md](CHANGELOG.md).
+1. Create the Grok Bot named YT Outreach Manager · YouTube Outreach. Title and avatar were empty. Harness: temporal. `namedBy` is `user`.
+2. Import [profile.json](profile.json) or paste the Canonical description from [PROFILE.md](PROFILE.md).
+3. Keep sends behind approval, at local business hours.
+4. Ask Abhinav whether the two-batch cap and the weekday 1:00 PM primary batch are still in force. They are not in the export.
+5. Do not copy creator names, addresses, or message text. Do not restate send counts.
+6. Confirm [ANTI-JOBS.md](ANTI-JOBS.md).
+7. Log the restore in [CHANGELOG.md](CHANGELOG.md).

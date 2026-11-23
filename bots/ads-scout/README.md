@@ -1,43 +1,46 @@
 # Ads Scout
 
-Public competitive ad-library monitor. Mondays 08:00 IST, silent-delta. Weekly, not daily. Documented from the 2026-09-17 fleet scan. Not a live profile export.
+Public Google Ads library monitor. The live name is **Ads Scout · Competitive Ads**. The folder stays `ads-scout`.
 
 | | |
 |---|---|
-| **Name** | Ads Scout |
-| **Title** | Ads Scout |
+| **Live name** | Ads Scout · Competitive Ads |
+| **Title** | empty in the 2026-11-22 export |
 | **Slug** | `ads-scout` |
 | **agent uuid** | `70b9e7e7-5a5c-487f-885e-b9ee6a6f633d` |
 | **serverId** | `3120543` |
 | **Owner** | Abhinav Singh |
 | **Timezone** | Asia/Calcutta (IST) |
-| **harness** | not captured — no live `profile.json` export |
-| **Job** | Public competitive ad-library monitor. Mondays 08:00 IST, silent-delta. Weekly, not daily. Do not change the company's ads. |
-| **Volume class** | med on Mondays, low otherwise, at the 2026-09-17 scan. Not a token count. |
-| **Change model** | Daily removed 2026-09-16. No further cut on 2026-09-17. Leave weekly unless a Monday run is empty noise. Own-account changes are Ads Guy, after approval in that bot's chat. |
+| **harness** | temporal |
+| **Avatar** | pebble / brown |
+| **namedBy** | user |
+| **Status** | On hold since 2026-09-22 23:51 IST |
+| **Job** | Watch the Google ads library so Cypherock knows what the market is running. Own-account changes are Ads Guy, after approval in that bot's chat. |
 
 ## When to use
 
-- Restore the weekly monitor if the live bot is lost: [PROFILE.md](PROFILE.md) + [OPERATIONS.md](OPERATIONS.md).
-- Confirm it is still weekly and still silent-delta before someone adds the daily run back.
+Do not wake it for a run. Abhinav ordered operations stopped on 2026-09-22, until he says to resume.
+
+Use this folder to restore the profile, or to confirm the hold, before anyone turns a routine back on.
 
 ## When not to use
 
-Do not ask it to change the company's ads. That is Ads Guy, after approval in that bot's chat. See [ANTI-JOBS.md](ANTI-JOBS.md).
+It does not change the company's ads. That is Ads Guy. See [ANTI-JOBS.md](ANTI-JOBS.md).
 
 ## Links
 
-- [PROFILE.md](PROFILE.md) — restore draft, not a live export
-- [OPERATIONS.md](OPERATIONS.md) — weekly Monday clock, no copied cron
+- [PROFILE.md](PROFILE.md) — live description, plus scan notes labeled as not exported
+- [profile.json](profile.json) — sanitized restore aid, 2026-11-22
+- [OPERATIONS.md](OPERATIONS.md) — hold, and the Monday clock that was not in the export
 - [ANTI-JOBS.md](ANTI-JOBS.md) — hard never-list
-- [CHANGELOG.md](CHANGELOG.md) — docs bootstrap and the 2026-09-16 cut
+- [CHANGELOG.md](CHANGELOG.md) — export reconciliation and the hold
 
 ## Operator notes
 
-Evidence is the 2026-09-17 fleet scan. This pass did not re-read the live Grok Bot on 2026-11-24.
+Hold source: the operator hold list. Bot id `3120543` matches this serverId. Reason, as recorded: Abhinav said to stop operations until further notice. Resume when Abhinav says resume. Confirmed 2026-09-22 23:51 IST.
 
-The Monday 08:00 IST clock is from the bot's status note at scan time. The cron expression was not copied. Do not invent one.
+The bot still had a profile on 2026-11-22. The hold is an operations stop, not a deletion.
 
-Work lived under `competitor-ads-intel`. The routine folder slug was not exported. A local snapshot said "No routines yet"; treat that as a stale mirror.
+The export is one sentence: it keeps an eye on the Google ads library. Monday 08:00 IST, silent-delta, and the removal of a daily run are from the 2026-09-17 scan. They are not in the export. The cron expression was never copied.
 
-Do not copy library captures or competitor names into this folder. Harness, avatar, and profile text were not exported. Known mode is silent-delta. Voice was not captured.
+Do not copy library captures or competitor names into this folder.

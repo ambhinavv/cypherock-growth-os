@@ -2,6 +2,16 @@
 
 Newest first. No invented usage numbers.
 
+## 2026-11-24
+
+### Live profile export
+
+- Replaced `profile.json` and the canonical description with the live export from 2026-11-22.
+- The new text adds a standing reply path for Chief Business Development Bot (serverId `4087835`): headroom and outreach-spend asks are answered, and a concrete token question from another bot may be answered. Fleet cuts stay propose-only until Abhinav says yes.
+- Anti-jobs wording in the export now says “outreach execution” rather than “outreach”, and it states the messaging exception above.
+- Title and avatar are empty in this export. The bootstrap note below that said to set the title to “Token Warden” is withdrawn. Harness remains temporal. Status: operational.
+- No usage numbers in the export. The 2026-09-17 Usage & Billing snapshot is unchanged and is not refreshed here.
+
 ## 2026-09-17
 
 ### Docs bootstrap
